@@ -1,5 +1,7 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 import rooms from '../images/rooms.jpg';
+import Ratings from './ratings';
 
 function RoomDisplay (){
         return (
@@ -41,9 +43,19 @@ function RoomDisplay (){
                     </div>
                     <div className='card'>
                         <img src='https://firebasestorage.googleapis.com/v0/b/hotel-app-884b5.appspot.com/o/rooms%2Froom1.jpg?alt=media&token=02c7a9f5-20a5-44a1-8e07-6c29602af5a0' className='card-image'/>
+                    <div className='card-text'>
+                        <h4>The People`s Brownstone</h4>
+                        <p>Wifi-Aircondition-Kitchen-Heating-Smokers <br></br>
+                            -Parking-Balcony-Animal friendly</p>
 
+                            <button type="button" class="btn btn-warning">BOOK</button>
 
-                    </div>   
+                            <Ratings/>&nbsp;<h4>R500</h4>
+                        
+                    </div>
+
+                    </div>
+                       
                     </td>
                     </tr>
                 </td>

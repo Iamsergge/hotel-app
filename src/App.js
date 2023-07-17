@@ -4,6 +4,7 @@ import './App.css';
 import Home from './components/home';
 import Login from './components/login';
 import RoomDisplay from './components/rooms';
+import Ratings from './components/ratings';
 import SignUp from './components/signUp';
 
 
