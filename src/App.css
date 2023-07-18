@@ -165,7 +165,94 @@ input[type=radio]{
 .card-text{
     width: 70%;
     height: 500px;
-    margin-top: -220px;
-    margin-left: 500px;
+    margin-top: -300px;
+    margin-left: 650px;
 
 }
+.booking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+/*.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width:500px;
+    height:300px;
+    border: 1px solid blue;
+    margin-left: 500px;
+    margin-top: -100px;
+
+
+}*/
+.counter{
+    margin-left: 1000px;
+    margin-top: -300px;
+}
+/* styles.css */
+.text-box {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .button-increment,
+  .button-decrement {
+    margin: 0 5px;
+  }
+  
+.button-increment{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+}
+.button-decrement{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+}
+
+
+.button-increment,
+.button-decrement {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* This makes the buttons circular */
+  border: none;
+  background-color: #007bff; /* Blue color (you can change this to any color you like) */
+  color: #fff; /* Text color to white */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-increment:hover,
+.button-decrement:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+.success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This will center the content vertically on the page */
+  }
+  .bi-check2-circle {
+    color: orange;
+    font-size: 70px;
+    margin-bottom: 20px;
+  }

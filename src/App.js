@@ -6,6 +6,8 @@ import Login from './components/login';
 import RoomDisplay from './components/rooms';
 import Ratings from './components/ratings';
 import SignUp from './components/signUp';
+import ReserveRoom from './components/bookin';
+import Success from './components/success';
 
 
 
@@ -13,7 +15,7 @@ import SignUp from './components/signUp';
 function App() {
   return (
     <div>
-     <RoomDisplay/>
+     <Success/>
      <Router>
       <Routes>
       <Route path="/login" element={<Home/>}></Route>
