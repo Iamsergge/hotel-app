@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import rooms from '../images/rooms.jpg';
-import Ratings from './ratings';
+import Ratings from './Ratings';
 
 function RoomDisplay (){
         return (

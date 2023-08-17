@@ -45,9 +45,9 @@ function Home (){
                                 <p>We want your stay at out lush hotel to be truly unforgotable. This is why we give special attention to all of your needs so<br/>
                                 &nbsp; that we can ensure an experience quite unique. Luxury hotels offer the the perfect setting with stunning views for leisure<br/>
                                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and our modern luxury resort facilities will help you enjoy the best of all</p>
-                            <div>
+                            <div className='gym1'>
                             <img src={gym1} className='the gym' alt='img'/>
-                                <h1>THE GYM</h1>
+                                <h1 className='gym-text'>THE GYM</h1>
                             </div>
                         
                             <div className='poolbar'>
