@@ -19,8 +19,8 @@ function Home (){
                                 <div className = 'nav-container'>
                                     <nav>
                                         <div className='navbar-links-container'>
-                                            <a href='' className='nav-links' style={{fontSize:"25px"}}>Facilities</a>
-                                            <a href='' className='nav-links' style={{fontSize:"25px"}}>Rooms</a>
+                                            <a href='home' className='nav-links' style={{fontSize:"25px"}}>Facilities</a>
+                                            <a href='room' className='nav-links' style={{fontSize:"25px"}}>Rooms</a>
                                         </div>
                                     </nav>
 
@@ -70,12 +70,12 @@ function Home (){
                             </div>
                             <div className='restuarent'>
                             <img src={restuarent} className='restuarent' alt='img' style={{width: '1200px'}}/>
-                                <h1>RESTUARENT</h1>
+                                <h1 className='restuarent-text'>RESTUARENT</h1>
                             
                             </div>
                             <div className='laundry'>
                             <img src={laundry} className='laundry' alt='img' style={{width: '1200px'}}/>
-                             <h1>LAUNDRY</h1>
+                             <h1 className='laundry-text'>LAUNDRY</h1>
                             
                             </div>
                             </div>

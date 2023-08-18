@@ -19,8 +19,8 @@ function Home (){
                                 <div className = 'nav-container'>
                                     <nav>
                                         <div className='navbar-links-container'>
-                                            <a href='' className='nav-links' style={{fontSize:"25px"}}>Facilities</a>
-                                            <a href='' className='nav-links' style={{fontSize:"25px"}}>Rooms</a>
+                                            <a href='home' className='nav-links' style={{fontSize:"25px"}}>Facilities</a>
+                                            <a href='rooms' className='nav-links' style={{fontSize:"25px"}}>Rooms</a>
                                         </div>
                                     </nav>
 
@@ -52,30 +52,30 @@ function Home (){
                         
                             <div className='poolbar'>
                             <img src={poolbar} className='poolbar' alt='img' style={{width: '1200px'}}/>
-                                <h1>POOLSIDE BAR</h1>
+                                <h1 className='poolside-text'>POOLSIDE BAR</h1>
                             
                         
-                            </div>
+                            </div><br></br><br></br><br></br>
 
                             <div className='spa1'>
                             <img src={spa1} className='spa1' alt='img' style={{width: '1200px'}}/>
-                                <h1>THE SPA</h1>
+                                <h1 className='spa-text'>THE SPA</h1>
                             
                         
-                            </div>
+                            </div><br></br><br></br><br></br>
                             <div className='swimmingpool'>
                             <img src={swimmingpool} className='swimmingpool' alt='img' style={{width: '1200px'}}/>
-                                <h1>SWIMMING POOL</h1>
+                                <h1 className='pool-text'>SWIMMING POOL</h1>
                             
-                            </div>
+                            </div><br></br><br></br><br></br>
                             <div className='restuarent'>
                             <img src={restuarent} className='restuarent' alt='img' style={{width: '1200px'}}/>
-                                <h1>RESTUARENT</h1>
+                                <h1 className='restuarent-text'>RESTUARENT</h1>
                             
-                            </div>
+                            </div><br></br><br></br><br></br>
                             <div className='laundry'>
                             <img src={laundry} className='laundry' alt='img' style={{width: '1200px'}}/>
-                             <h1>LAUNDRY</h1>
+                             <h1 className='laundry-text'>LAUNDRY</h1>
                             
                             </div>
                             </div>
