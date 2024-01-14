@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import rooms from '../images/rooms.jpg';
-import Ratings from './Ratings';
+import Ratings from './ratings';
 
 function RoomDisplay() {
     return (
