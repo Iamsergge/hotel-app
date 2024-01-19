@@ -3,7 +3,7 @@ import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from 'fir
 import { auth } from '../config/firebase';
 import { useNavigate, Link } from 'react-router-dom';
 import { MDBBtn, MDBContainer, MDBRow, MDBCol, MDBInput } from 'mdb-react-ui-kit';
-
+import '../login.css';
 import hotel1 from '../images/hotel1.jpg';
 
 function Login() {
@@ -36,54 +36,61 @@ function Login() {
   };
 
   return (
-    <div className='login-container'>
-      <MDBContainer className='my-5 gradient-form'>
-        <MDBRow>
-          <MDBCol col='6' className='mb-5'>
-            <div className='d-flex flex-column ms-5'>
-              <p>Please login to your account</p>
-              <MDBInput
-                wrapperClass='mb-4'
-                label='Email address'
-                id='form1'
-                type='email'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <MDBInput
-                wrapperClass='mb-4'
-                label='Password'
-                id='form2'
-                type='password'
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-              <div className='text-center pt-1 mb-5 pb-1'>
-                <MDBBtn className='mb-4 w-100 gradient-custom-2' onClick={handleLogin}>
-                  Login
+    <MDBContainer className='my-5 gradient-form d-flex align-items-center justify-content-center'>
+      <MDBRow>
+        <MDBCol col='6' className='mb-5'>
+          <div className='d-flex flex-column align-items-center'>
+            <p>Please login to your account</p>
+            <MDBInput
+              wrapperClass='mb-4'
+              label='Email address'
+              id='form1'
+              type='email'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <MDBInput
+              wrapperClass='mb-4'
+              label='Password'
+              id='form2'
+              type='password'
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <div className='text-center pt-1 mb-5 pb-1'>
+              <MDBBtn
+                className='mb-4 w-100 gradient-custom-2'
+                onClick={handleLogin}
+              >
+                Login
+              </MDBBtn>
+              <a className='text-muted' href='#!' onClick={handleForgotPassword}>
+                Forgot password?
+              </a>
+            </div>
+            <div className='d-flex flex-row align-items-center justify-content-center pb-4 mb-4'>
+              <p className='mb-0'>Don't have an account?</p>
+              <Link to='/signup'>
+                <MDBBtn
+                  outline
+                  className='mx-2'
+                  color='danger'
+                >
+                  Sign Up
                 </MDBBtn>
-                <a className='text-muted-link' href='#!' onClick={handleForgotPassword}>
-                  Forgot password?
-                </a>
-              </div>
-              <div className='d-flex flex-row align-items-center justify-content-center pb-4 mb-4'>
-                <p className='mb-0'>Don't have an account?</p>
-                <Link to='/signup'>
-                  <MDBBtn outline className='btnbtn-warning' color='danger'>
-                    Sign Up
-                  </MDBBtn>
-                </Link>
-              </div>
+              </Link>
             </div>
-          </MDBCol>
-          <MDBCol col='6' className='mb-5'>
-            <div className='login-image'>
-              <img src={hotel1} className='login-image' alt='img'></img>
+          </div>
+        </MDBCol>
+        <MDBCol col='6' className='mb-5'>
+        <div className="d-flex flex-column justify-content-center gradient-custom-2 h-100 mb-4">
+            <div className="text-white px-3 py-4 p-md-5 mx-md-4">
+              <img src={hotel1} className="" alt="img" />
             </div>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
-    </div>
+          </div>
+        </MDBCol>
+      </MDBRow>
+    </MDBContainer>
   );
 }
 
